@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Image</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Foreground content -->
+    <div class="content">
+        <h2>Capture Image from Webcam</h2>
+        <video id="video" autoplay></video>
+        <button id="capture">Ride Bike</button>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="bike_image">
+        <img src="/static/bike_final.png">
+    </div>
+    <!-- Video element for background when prediction is 1 -->
+    <video autoplay muted loop id="backgroundVideo" class="hidden">
+        <source src="/static/road_video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

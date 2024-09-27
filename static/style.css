@@ -1,0 +1,99 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    min-height: 100vh;
+    background-image: url('/static/road_photo.png'); /* Initial background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Video styling to cover the background when it's active */
+#backgroundVideo {
+    border:none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Behind all other content */
+}
+
+/* Hidden class for when the video is not being used */
+.hidden{
+    display:none;
+}
+
+/* Foreground content styling */
+.content {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+video {
+    border: 4px solid #0066cc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004a99;
+}
+
+#resultImage {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+h2, h1 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    color: white;
+    margin-left: 0;
+    padding: 0;
+}
+
+canvas {
+    display: none;
+}
+
+.bike_image{
+    position: absolute;
+    bottom:0;
+    left:35%;
+    transform:scale(1.6);
+}
