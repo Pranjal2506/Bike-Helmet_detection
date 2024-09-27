@@ -1,0 +1,5 @@
+Flask==2.3.3
+opencv-python==4.8.0.76
+numpy==1.24.4
+ultralytics==8.0.28
+gunicorn==22.0.0
