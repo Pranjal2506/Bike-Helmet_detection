@@ -50,6 +50,3 @@ def upload_image():
         "alert": alert_message,
         "prediction": cls  # Include the class prediction in the response
     })
-
-if __name__ == '__main__':
-    app.run(debug=True)
